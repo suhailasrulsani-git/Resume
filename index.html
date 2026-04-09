@@ -17,6 +17,8 @@
         header { background: #2c3e50; color: white; padding: 40px; text-align: center; }
         header h1 { font-size: 30px; margin-bottom: 10px; }
         header p { font-size: 14px; margin: 4px 0; color: #ccd6e0; }
+        header a { color: #3498db; text-decoration: none; }
+        header a:hover { text-decoration: underline; }
         .content { padding: 40px; }
         .section { margin-bottom: 38px; }
         .section-title { font-size: 19px; font-weight: bold; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 7px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.4px; }
@@ -54,14 +56,9 @@
         .focus-list li { font-size: 14px; padding: 9px 14px; margin-bottom: 6px; background: #f8f9fa; border-left: 3px solid #3498db; }
         .focus-list.red li { border-left-color: #e74c3c; background: #fdf6f5; }
         .focus-closing { background: #f8f9fa; border-left: 4px solid #3498db; padding: 20px 24px; font-size: 14px; line-height: 1.8; color: #444; }
-        .share-box { background: #e8f4f8; border: 1px solid #b8ddef; border-radius: 5px; padding: 15px 20px; margin-bottom: 30px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-        .share-box span { font-size: 14px; color: #555; flex: 1; min-width: 180px; }
-        .copy-btn { background: #3498db; color: white; border: none; padding: 9px 20px; border-radius: 4px; cursor: pointer; font-size: 13px; transition: background 0.2s; white-space: nowrap; font-family: Arial, sans-serif; }
-        .copy-btn:hover { background: #2980b9; }
-        .copy-btn.copied { background: #27ae60; }
         @media print {
             body { background: white; }
-            .tab-nav, .print-btn, .share-box { display: none !important; }
+            .tab-nav, .print-btn { display: none !important; }
             .container { box-shadow: none; max-width: 100%; }
             .page { display: block !important; }
             #page-focus, #page-projects { display: none !important; }
@@ -91,21 +88,25 @@
     <header>
         <h1>Muhammad Suhail Bin Asrulsani</h1>
         <p>No 15 Jalan 3/2h, 43650 Bandar Baru Bangi, Selangor</p>
-        <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d88badb0b9b1b4f6b9abaaadb498bfb5b9b1b4f6bbb7b5">[email&#160;protected]</a> &nbsp;|&nbsp; Mobile: 0136868718</p>
+        <p>Email: <a href="mailto:Suhail.asrul@gmail.com">Suhail.asrul@gmail.com</a> &nbsp;|&nbsp; Mobile: 0136868718</p>
     </header>
     <div class="content">
         <section class="section">
             <h2 class="section-title">Summary</h2>
             <p class="summary-text">Automation is not just my job title &mdash; it is how I think. With 15+ years in IT, I have built my career around one purpose: turning manual, repetitive work into automated, reliable solutions that give teams back their time.</p>
-            <p class="summary-text">I specialize in PowerShell scripting and automation across Microsoft environments &mdash; Active Directory, Exchange on-premises, Exchange Online, Office 365, Azure, and Windows Server. Beyond scripting, I build web-based automation portals and monitoring dashboards that make complex operations accessible to entire teams, not just engineers.</p>
-            <p class="summary-text">I have worked across banking, logistics, and cloud environments &mdash; Standard Chartered, RHB, DHL &mdash; solving real operational problems at scale. I bring both the technical depth to build the solution and the practical experience to know what actually needs automating.</p>
+            <p class="summary-text">I specialize in PowerShell scripting and automation across Microsoft environments &mdash; Active Directory, Exchange on-premises, Exchange Online, Office 365, Azure, and Windows Server. Beyond scripting, I build web-based automation portals with SQL Server backends and monitoring dashboards that make complex operations accessible to entire teams, not just engineers.</p>
+            <p class="summary-text">I have worked across banking, logistics, and cloud environments, solving real operational problems at scale. I bring both the technical depth to build the solution and the practical experience to know what actually needs automating.</p>
             <p class="summary-text">What I am looking for is simple: a company that values automation-first thinking and wants someone who will look at their environment and find every opportunity to make it smarter, faster, and more efficient.</p>
         </section>
 
         <section class="section">
             <h2 class="section-title">Professional Experience</h2>
+
             <div class="job">
-                <div class="job-header"><div class="job-title">Senior Automation Engineer</div><div class="job-date">Present</div></div>
+                <div class="job-header">
+                    <div class="job-title">Senior Automation Engineer</div>
+                    <div class="job-date">Present</div>
+                </div>
                 <div class="job-company">Standard Chartered Bank, Malaysia</div>
                 <p class="job-desc">Lead enterprise-wide automation initiatives for server infrastructure, Active Directory, Exchange on-premises, and Exchange Online environments. Design and develop comprehensive PowerShell automation solutions, web-based portals, and monitoring dashboards to streamline operations, reduce manual intervention, and improve service reliability across the organization.</p>
                 <ul>
@@ -115,15 +116,20 @@
                     <li>Design automated workflows using PowerShell for Active Directory user lifecycle management, routine administrative tasks, patch deployment, task scheduling, and system health monitoring</li>
                     <li>Build PowerShell-based automation frameworks for Active Directory management, server configuration management, standardization, and infrastructure-as-code practices</li>
                     <li>Develop automated monitoring, alerting, and reporting solutions with custom HTML/CSS dashboards powered by PowerShell for proactive issue identification across Active Directory and Exchange environments</li>
+                    <li>Automate migration workflows and tracking using SharePoint List integration with PowerShell, enabling real-time status updates and centralized request management for Korea DL and mailbox migrations</li>
                     <li>Collaborate with infrastructure and operations teams to identify automation opportunities and implement PowerShell-based efficiency improvements</li>
                 </ul>
             </div>
+
             <div class="job">
-                <div class="job-header"><div class="job-title">Senior Automation Engineer</div><div class="job-date">July 2022 &ndash; Present</div></div>
+                <div class="job-header">
+                    <div class="job-title">Senior Automation Engineer</div>
+                    <div class="job-date">July 2022 &ndash; Dec 2022</div>
+                </div>
                 <div class="job-company">RHB Bank, Bandar Baru Bangi, Malaysia</div>
                 <ul>
                     <li>Developed and maintained Ansible playbooks for infrastructure automation and configuration management</li>
-                    <li>Created PowerShell automation scripts for Active Directory administration, Windows environment administration, operations, and integration with Ansible workflows</li>
+                    <li>Created PowerShell automation scripts for Active Directory administration, Windows environment administration, and operations</li>
                     <li>Automated Active Directory user provisioning, group management, and reporting tasks using PowerShell</li>
                     <li>Established processes for managing operations-developed playbooks and automation workflows</li>
                     <li>Administered Ansible infrastructure and automation tools, performed system maintenance, and optimized configuration settings</li>
@@ -131,115 +137,120 @@
                     <li>Delivered technical support to IT operations teams for PowerShell and Ansible automation solution implementation and troubleshooting</li>
                 </ul>
             </div>
+
             <div class="job">
-                <div class="job-header"><div class="job-title">Senior Consultant O365</div><div class="job-date">February 2022 &ndash; July 2022</div></div>
+                <div class="job-header">
+                    <div class="job-title">Senior Consultant O365</div>
+                    <div class="job-date">February 2022 &ndash; July 2022</div>
+                </div>
                 <div class="job-company">DHL, Cyberjaya, Malaysia</div>
                 <ul>
                     <li>Supported large-scale migration from Exchange 2016 on-premises to Office 365</li>
                     <li>Developed PowerShell scripts for Active Directory synchronization, migration automation, mailbox provisioning, and reporting</li>
-                    <li>Provided Level 2 Exchange Online and Outlook troubleshooting with expertise in PowerShell-based diagnostics and Active Directory troubleshooting</li>
+                    <li>Provided Level 2 Exchange Online and Outlook troubleshooting with expertise in PowerShell-based diagnostics and Active Directory integration</li>
                     <li>Managed Exchange 2016 on-premises infrastructure, Active Directory integration, and hybrid configuration</li>
                     <li>Created PowerShell automation scripts and documentation for common support scenarios</li>
                 </ul>
             </div>
+
             <div class="job">
-                <div class="job-header"><div class="job-title">Cloud &amp; Automation Engineer</div><div class="job-date">September 2021 &ndash; February 2022</div></div>
+                <div class="job-header">
+                    <div class="job-title">Cloud &amp; Automation Engineer</div>
+                    <div class="job-date">September 2021 &ndash; February 2022</div>
+                </div>
                 <div class="job-company">THINK TECHNOLOGY AUSTRALIA, Brisbane, Australia</div>
                 <ul>
-                    <li>Managed Azure Core Platform services: Compute, Storage, and Networking using PowerShell and Azure CLI</li>
+                    <li>Managed Azure Core Platform services: Compute, Storage, and Networking using PowerShell and Azure CLI automation</li>
                     <li>Administered Azure AD, SSO/Federation, RBAC, Azure AD B2C/B2B, and MS Graph with PowerShell automation</li>
                     <li>Implemented identity and authentication solutions across cloud and hybrid Active Directory environments</li>
-                    <li>Developed PowerShell scripts for Azure resource provisioning, Active Directory synchronization, and management automation</li>
+                    <li>Developed PowerShell scripts for Azure resource provisioning, Active Directory synchronization, and automated compliance reporting</li>
                 </ul>
             </div>
+
             <div class="job">
-                <div class="job-header"><div class="job-title">Patch Management Engineer</div><div class="job-date">April 2020 &ndash; September 2021</div></div>
+                <div class="job-header">
+                    <div class="job-title">Patch Management Engineer</div>
+                    <div class="job-date">April 2020 &ndash; September 2021</div>
+                </div>
                 <div class="job-company">AVERIS SDN BHD, Kuala Lumpur, Malaysia</div>
                 <ul>
-                    <li>Deployed comprehensive patch management solutions for Windows and Unix/Linux infrastructure</li>
-                    <li>Developed PowerShell scripts for automatic patching, software installation, Active Directory computer management, and system health checks</li>
-                    <li>Created PowerShell automation for Active Directory reporting, compliance reporting, and vulnerability assessment workflows</li>
-                    <li>Executed daily, weekly, and monthly patching schedules using PowerShell-based automation</li>
-                    <li>Managed automated scans including discovery, compliance, and vulnerability assessments</li>
-                    <li>Maintained IT asset inventory and supported ISO 20000 certification using PowerShell reporting tools</li>
+                    <li>Deployed comprehensive patch management solutions for Windows and Unix/Linux infrastructure using SCCM and PowerShell automation</li>
+                    <li>Developed PowerShell scripts for automatic patching, software installation, Active Directory reporting, and system health monitoring</li>
+                    <li>Created PowerShell automation for Active Directory reporting, compliance reporting, and security vulnerability assessments</li>
+                    <li>Executed daily, weekly, and monthly patching schedules using PowerShell-based automation and Task Scheduler</li>
+                    <li>Managed automated scans including discovery, compliance, and vulnerability assessments across the infrastructure</li>
                 </ul>
             </div>
-            <div class="job">
-                <div class="job-header"><div class="job-title">3rd Line Service Engineer</div><div class="job-date">January 2020 &ndash; April 2020</div></div>
-                <div class="job-company">GCI, Cyberjaya, Selangor, Malaysia</div>
-                <ul>
-                    <li>Managed Exchange, Skype for Business, Enterprise Vault, and O365 environments</li>
-                    <li>Developed PowerShell scripts for Active Directory management, reporting, monitoring, and administrative automation</li>
-                    <li>Administered Active Directory, DHCP, DNS, File and Print servers with PowerShell automation</li>
-                    <li>Automated GPO management, Active Directory user provisioning, and deployment using PowerShell</li>
-                    <li>Administered VMware/Windows Server environments with PowerShell-based monitoring and configuration</li>
-                </ul>
-            </div>
-            <div class="job">
-                <div class="job-header"><div class="job-title">Technical Support Engineer</div><div class="job-date">December 2018 &ndash; December 2019</div></div>
-                <div class="job-company">THOMAS DURYEA LOGICALIS, Cyberjaya, Selangor, Malaysia</div>
-                <ul>
-                    <li>Managed SCCM for application packaging, deployment, and operating system imaging</li>
-                    <li>Developed PowerShell scripts for Active Directory user management, task automation, reporting, and inventory management</li>
-                    <li>Automated patching management and software deployment using PowerShell</li>
-                    <li>Administered Office 365 and Active Directory with PowerShell automation</li>
-                    <li>Created PowerShell-based reporting and monitoring solutions for VMware infrastructure and Active Directory</li>
-                </ul>
-            </div>
-            <div class="job">
-                <div class="job-header"><div class="job-title">IT Infrastructure Engineer</div><div class="job-date">January 2017 &ndash; December 2018</div></div>
-                <div class="job-company">COGNIZANT, Kulim, Kedah, Malaysia</div>
-                <ul>
-                    <li>Managed SCCM for application deployment and software updates</li>
-                    <li>Developed PowerShell, VBScript, and Batch scripts for Active Directory automation, task automation, and reporting</li>
-                    <li>Administered Active Directory, DHCP, DNS with PowerShell automation</li>
-                    <li>Created PowerShell scripts for Active Directory user lifecycle management, VMware infrastructure monitoring, and performance analysis</li>
-                    <li>Automated backup monitoring and reporting using PowerShell with Veeam</li>
-                </ul>
-            </div>
-            <div class="job">
-                <div class="job-header"><div class="job-title">Desktop Engineer L2</div><div class="job-date">January 2016 &ndash; December 2016</div></div>
-                <div class="job-company">TATA CONSULTANCY SERVICES, Kuala Lumpur, Malaysia</div>
-                <ul>
-                    <li>Administered GPO, Active Directory, DHCP, DNS, and File Servers</li>
-                    <li>Developed PowerShell scripts for Active Directory user administration and reporting automation</li>
-                    <li>Managed patch management and workstation deployment</li>
-                    <li>Administered SharePoint and provided L1/L2/L3 desktop support</li>
-                </ul>
-            </div>
-            <div class="job">
-                <div class="job-header"><div class="job-title">ITO Service Delivery Representative V</div><div class="job-date">January 2014 &ndash; December 2015</div></div>
-                <div class="job-company">HEWLETT PACKARD ENTERPRISE, Cyberjaya, Selangor, Malaysia</div>
-                <ul>
-                    <li>Administered File Servers and provided L1/L2/L3 desktop support</li>
-                    <li>Developed PowerShell scripts for Active Directory user account management in UNIX and Linux environments</li>
-                    <li>Managed workstation imaging and deployment</li>
-                </ul>
-            </div>
-            <div class="job">
-                <div class="job-header"><div class="job-title">Global Service Desk</div><div class="job-date">January 2010 &ndash; December 2013</div></div>
-                <div class="job-company">HEWLETT PACKARD, Cyberjaya, Selangor, Malaysia</div>
-                <ul>
-                    <li>Provided L1 support for desktop and application troubleshooting</li>
-                    <li>Managed user accounts in Active Directory using PowerShell</li>
-                    <li>Supported all channels: Phone, Chat, Self-Service, and Email</li>
-                    <li>Contributed to knowledge management and documentation</li>
-                </ul>
-            </div>
-        </section>
 
-        <section class="section">
-            <h2 class="section-title">Certificates</h2>
-            <div class="cert-grid">
-                <div class="cert-item">ITIL V3 Foundation</div>
-                <div class="cert-item">MCSA 2012 &ndash; Microsoft Certified Solution Associates</div>
-                <div class="cert-item">MCSE 2003 &ndash; Microsoft Certified System Engineer</div>
-                <div class="cert-item">MCP &ndash; Microsoft Certified Professional</div>
-                <div class="cert-item">CCNA &ndash; Cisco Certified Network Associate</div>
-                <div class="cert-item">AZ-900 &ndash; Microsoft Certified Azure Fundamentals</div>
-                <div class="cert-item">MS-900 &ndash; Microsoft 365 Certified Fundamentals</div>
-                <div class="cert-item">SC-900 &ndash; Microsoft Security, Compliance &amp; Identity Fundamentals</div>
-                <div class="cert-item">PL-900 &ndash; Microsoft Power Platform Fundamentals</div>
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Windows Server Engineer</div>
+                    <div class="job-date">March 2019 &ndash; April 2020</div>
+                </div>
+                <div class="job-company">GCI GENERAL CONTRACTORS INC, New York, USA</div>
+                <ul>
+                    <li>Administered Windows Server infrastructure including Active Directory, Group Policy, DNS, and DHCP</li>
+                    <li>Developed PowerShell scripts for server provisioning, Active Directory automation, and compliance reporting</li>
+                    <li>Managed SharePoint administration, site collections, permissions, and automated workflows using PowerShell</li>
+                    <li>Implemented automated monitoring and alerting solutions for proactive system management</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">System Administrator</div>
+                    <div class="job-date">November 2017 &ndash; March 2019</div>
+                </div>
+                <div class="job-company">THOMAS DURYEA LOGICALIS, Kuala Lumpur, Malaysia</div>
+                <ul>
+                    <li>Managed SharePoint on-premises infrastructure, site collections, permissions, and workflows</li>
+                    <li>Administered Active Directory, Group Policy, DNS, DHCP, and Windows Server environments</li>
+                    <li>Developed automation scripts for routine administrative tasks and system health checks</li>
+                    <li>Provided technical support and administration for enterprise infrastructure systems</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Windows Server Administrator</div>
+                    <div class="job-date">June 2016 &ndash; November 2017</div>
+                </div>
+                <div class="job-company">COGNIZANT TECHNOLOGY SOLUTIONS, Cyberjaya, Malaysia</div>
+                <ul>
+                    <li>Administered Windows Server environments including Active Directory, DNS, DHCP, and File Services</li>
+                    <li>Managed virtualization infrastructure using VMware vSphere and vCenter</li>
+                    <li>Developed automation scripts for system administration and monitoring tasks</li>
+                    <li>Provided Level 2/3 support for enterprise server infrastructure</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">System Engineer</div>
+                    <div class="job-date">January 2016 &ndash; June 2016</div>
+                </div>
+                <div class="job-company">TATA CONSULTANCY SERVICES, Cyberjaya, Malaysia</div>
+                <ul>
+                    <li>Supported SharePoint administration, user management, and permissions</li>
+                    <li>Administered Active Directory, Windows Server, and enterprise infrastructure</li>
+                    <li>Developed automation solutions for routine administrative tasks</li>
+                    <li>Provided technical support for enterprise applications and infrastructure</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Desktop Support Engineer</div>
+                    <div class="job-date">October 2010 &ndash; January 2016</div>
+                </div>
+                <div class="job-company">HEWLETT PACKARD ENTERPRISE MALAYSIA SDN BHD, Cyberjaya, Malaysia</div>
+                <ul>
+                    <li>Provided comprehensive desktop support for enterprise users including hardware, software, and network troubleshooting</li>
+                    <li>Administered Active Directory user accounts, group memberships, and security permissions</li>
+                    <li>Managed Windows desktop deployments, software installations, and system configurations</li>
+                    <li>Developed automation scripts for routine support tasks and system administration</li>
+                    <li>Supported enterprise applications including Office 365, Exchange, and collaboration tools</li>
+                </ul>
             </div>
         </section>
 
@@ -248,6 +259,7 @@
             <div class="skills-grid">
                 <div class="skill-item">PowerShell Scripting &amp; Automation</div>
                 <div class="skill-item">Active Directory Administration &amp; Automation</div>
+                <div class="skill-item">SharePoint Online Administration &amp; Automation</div>
                 <div class="skill-item">Automation Portal Development (HTML/CSS/JavaScript)</div>
                 <div class="skill-item">Ansible Playbook Development &amp; Configuration Management</div>
                 <div class="skill-item">Exchange Administration (On-Premises &amp; Online)</div>
@@ -259,6 +271,18 @@
                 <div class="skill-item">Windows Server Administration</div>
                 <div class="skill-item">VMware vCenter &amp; vSphere</div>
                 <div class="skill-item">Patch Management &amp; Automation</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Certificates</h2>
+            <div class="cert-grid">
+                <div class="cert-item">MCSE: Cloud Platform and Infrastructure</div>
+                <div class="cert-item">MCSA: Windows Server 2016</div>
+                <div class="cert-item">MCP: Microsoft Certified Professional</div>
+                <div class="cert-item">MTA: Networking Fundamentals</div>
+                <div class="cert-item">Microsoft 365 Certified: Modern Desktop Administrator Associate</div>
+                <div class="cert-item">Microsoft Certified: Azure Administrator Associate</div>
             </div>
         </section>
 
@@ -415,8 +439,8 @@
             </div>
         </div>
 
-                <div class="project">
-            <div class="project-header"><div class="project-title">13. Server &amp; Infrastructure Automation Scripts Library</div><div class="project-tag">Backend Automation</div></div>
+        <div class="project">
+            <div class="project-header"><div class="project-title">17. Server &amp; Infrastructure Automation Scripts Library</div><div class="project-tag">Backend Automation</div></div>
             <div class="project-body">
                 <p class="project-desc">An extensive library of PowerShell automation scripts — numbering in the hundreds — developed and deployed over 15+ years across multiple enterprise environments. Scheduled via Windows Task Scheduler, covering server health checks, disk space monitoring, service restart automation, certificate expiry alerts, Active Directory housekeeping, Exchange maintenance routines, automated reporting, compliance checks, and incident response workflows. Each script is built with full error handling, structured logging, and email alerting to ensure operational reliability around the clock.</p>
                 <div class="project-tech">&#128296; PowerShell &bull; Windows Server &bull; Active Directory &bull; Exchange &bull; Task Scheduler</div>
@@ -431,25 +455,10 @@
 <div id="page-focus" class="page">
 <div class="container">
     <div class="focus-header">
-        <h1>Muhammad Suhail &mdash; Career Focus</h1>
-        <p>What I am passionate about and what I am looking for in my next role</p>
+        <h1>Career Focus &amp; Role Fit</h1>
+        <p>A transparent guide to help align opportunities with my strengths</p>
     </div>
     <div class="focus-content">
-        <div class="share-box">
-            <span>&#128206; Share this page directly with a recruiter or hiring manager:</span>
-            <button class="copy-btn" id="copyBtn" onclick="copyLink()">Copy Link</button>
-        </div>
-        <div class="focus-block">
-            <h3>My Passion: Automation</h3>
-            <p>I am deeply passionate about automation and have dedicated the past 7+ years to mastering this craft. Automation is not just a technical skill for me &mdash; it is a philosophy of continuous improvement, efficiency, and innovation. I find genuine satisfaction in:</p>
-            <ul class="focus-list">
-                <li>Designing and developing PowerShell automation solutions that eliminate repetitive tasks</li>
-                <li>Creating web-based automation portals that empower teams and enhance operational visibility</li>
-                <li>Building monitoring dashboards that provide real-time insights and proactive alerting</li>
-                <li>Streamlining complex workflows in Active Directory, Exchange, Office 365, and server infrastructure</li>
-                <li>Transforming manual processes into automated, reliable, and scalable solutions</li>
-            </ul>
-        </div>
         <div class="focus-block">
             <h3>What I Am Looking For in My Next Role</h3>
             <p>I am seeking a position where I can continue to focus on automation and make a meaningful impact. The ideal role would involve:</p>
@@ -477,13 +486,13 @@
             <br><br>
             However, if the role focuses more on traditional support, manual administration, or does not provide opportunities for automation work, I kindly suggest we may not be a perfect match &mdash; and that's perfectly fine. My goal is to ensure we both invest our time wisely in opportunities that are truly aligned.
             <br><br>
-            <strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d784a2bfb6bebbf9b6a4a5a2bb97b0bab6bebbf9b4b8ba">[email&#160;protected]</a> &nbsp;|&nbsp; <strong>Mobile:</strong> 0136868718
+            <strong>Email:</strong> <a href="mailto:Suhail.asrul@gmail.com">Suhail.asrul@gmail.com</a> &nbsp;|&nbsp; <strong>Mobile:</strong> 0136868718
         </div>
     </div>
 </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
     function switchTab(tab, btn) {
         document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
         document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -510,6 +519,7 @@
             observer.observe(s);
         });
     });
+</script>
 
-    function copyLink() {
-        const url = window.location.href.split(
+</body>
+</html>
